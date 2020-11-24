@@ -1,0 +1,299 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Color Theme Swatches in Hex */
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  width: 100vw;
+  background-color: #9ca1a6;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100; }
+  header img {
+    margin-left: 1.5rem;
+    width: 2.5rem; }
+  header .nav {
+    padding: 0 1rem; }
+    header .nav a {
+      text-decoration: none;
+      font-size: 1.1rem;
+      color: #f0f0f0;
+      letter-spacing: 0.3rem;
+      margin: 0 1.3rem;
+      display: inline-block;
+      padding: 0.4rem 0; }
+
+main {
+  width: 100vw;
+  height: 100vh; }
+  main .image-container {
+    background-image: url("https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+    height: 500px;
+    width: 100vw;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; }
+    main .image-container h1 {
+      font-size: 6rem;
+      font-weight: bold; }
+    main .image-container p {
+      font-size: 1rem;
+      font-weight: lighter;
+      margin: 1.5rem; }
+  main .about {
+    margin: 0 auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .about h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      letter-spacing: 0.3rem; }
+    main .about p {
+      margin: 1rem; }
+  main .donations {
+    text-align: center;
+    background-image: linear-gradient(white, #9ca1a6);
+    padding: 6rem; }
+    main .donations-link {
+      text-decoration: none;
+      background: none;
+      color: black;
+      font-size: 1.3rem;
+      background: #1279b6;
+      box-shadow: 1px 1px 10px 1px gray;
+      padding: 1rem;
+      border-radius: 1rem; }
+  main .about-donations {
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    main .about-donations-text {
+      font-size: 1.2rem; }
+    main .about-donations-info {
+      padding: 4rem;
+      width: 100%; }
+      main .about-donations-info-links {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        main .about-donations-info-links a {
+          padding: 0 1rem; }
+          main .about-donations-info-links a img {
+            width: 3rem; }
+      main .about-donations-info-account {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        main .about-donations-info-account p {
+          margin: 0.2rem; }
+  main .login {
+    background-color: #9ca1a6;
+    text-align: center; }
+    main .login a {
+      text-decoration: none;
+      color: #f0f0f0;
+      background-color: black;
+      padding: 1rem;
+      border-radius: 1rem; }
+  main .services {
+    background-image: linear-gradient(white, #9ca1a6);
+    text-align: center; }
+    main .services h2 {
+      font-size: 2.3rem;
+      font-weight: bold; }
+    main .services .container-grid {
+      max-width: 960px;
+      margin: 3rem auto 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 4rem 0; }
+    main .services-info {
+      background-color: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      position: relative;
+      margin: 4rem 1rem; }
+      main .services-info img {
+        width: 20%;
+        background-color: #127cbb;
+        padding: 0.7rem;
+        border-radius: 30%;
+        position: absolute;
+        top: -40px;
+        left: 40%; }
+      main .services-info h3 {
+        font-size: 1.3rem;
+        font-weight: bold; }
+      main .services-info p {
+        font-weight: lighter;
+        margin: 1rem; }
+      main .services-info a {
+        text-decoration: none;
+        background-color: black;
+        color: #f0f0f0;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        position: absolute;
+        bottom: -1rem;
+        right: 40%; }
+
+footer {
+  background-color: #9ca1a6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem; }
+  footer a {
+    width: 3%;
+    margin: 1rem; }
+
+.container {
+  margin: 0 auto;
+  max-width: 860px; }
+
+/*# sourceMappingURL=style.css.map */
